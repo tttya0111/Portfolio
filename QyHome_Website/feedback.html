@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="feedback.css">
+        <title>QYHome</title>
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src="Icon/Nav_Icon/logo.png" alt="QYHome logo"  width="190px" height="75px" style="margin-bottom:0; "></a>
+            <a href="#" id="loginIcon"><img class="hover" src="Icon/Nav_Icon/login (1).png" alt="login" width="38px" height="38px" style="float: right; margin: 15px 20px 10px 20px;"></a>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product2.html">Product</a></li>
+                <li><a href="promotion.html">Promotion</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="outlet.html">Our Outlet</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+        <br/>
+        <div id="scoreboard">
+            <span class="heading">User Rating</span>
+            <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+            <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+            <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+            <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+            <span style="font-size: 150%; color: #D6F1EA;">&starf;</span>
+            <button id="open-button" onclick="openForm()">Write a review</button>
+            <p>Totally 16 reviews.</p>
+            <hr style="border: 2px ridge #a5e0ff;">
+            <div class="row">
+                <div class="side">
+                    <div>5 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-5"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div>9</div>
+                </div>
+                <div class="side">
+                    <div>4 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-4"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div>1</div>
+                </div>
+                <div class="side">
+                    <div>3 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-3"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div>2</div>
+                </div>
+                <div class="side">
+                    <div>2 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-2"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div>4</div>
+                </div>
+                <div class="side">
+                    <div>1 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-1"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div>0</div>
+                </div>
+            </div>
+        </div>
+        <div id="review">
+            <h2>Review</h2><hr>
+            <div class="reviewborder">
+                <div>
+                    <img src="icon/review/p6.jpeg" alt="p6">
+                </div>
+                <span class="reviewname">Jason Foo</span>&nbsp;
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <p>Product: Air Cooler</p>
+                <p>Fast Delivery.</p>
+            </div>
+            <div class="reviewborder">
+                <div>
+                    <img src="icon/review/p2.jpg" alt="p2">
+                </div>
+                <span class="reviewname">Alice</span>&nbsp;
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <p>Product: Dryer</p>
+                <p>Product is in good condition.</p>
+            </div>   
+            <div class="reviewborder">
+                <div>
+                    <img src="icon/review/p3.jpeg" alt="p3">
+                </div>
+                <span class="reviewname">Gladys</span>&nbsp;
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: #a6c8de;">&starf;</span>
+                <p>Product: Robot Vacuum</p>
+                <p>Although the product packaging has been hit, the product is in good condition.</p>
+            </div>
+            <div class="reviewborder">
+                <div>
+                    <img src="icon/review/p4.jpg" alt="p4">
+                </div>
+                <span class="reviewname">Chloe</span>&nbsp;
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <p>Product: Air Purifier</p>
+                <p>Product quality is guaranteed.</p>
+            </div>
+            <div class="reviewborder">
+                <div>
+                    <img src="icon/review/p5.jpeg" alt="p5">
+                </div>
+                <span class="reviewname">Aina</span>&nbsp;
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <p>Product: Water Heater</p>
+                <p>Item safety arrived in good condition. Package wrapped well.</p>
+            </div>
+            <div class="reviewborder">
+                <div>
+                    <img src="icon/review/p15.jpg" alt="p15">
+                </div>
+                <span class="reviewname">Anson</span>&nbsp;
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <p>Product: Stick Vacuum</p>
+                <p>The store offers quick shipping, with delivery times of about a week. I am also quite satisfied with the product's high quantity.</p>
+            </div>
+            <div class="reviewborder">
+                <div>
+                    <img src="icon/review/p13.jpg" alt="p13">
+                </div>
+                <span class="reviewname">Angela</span>&nbsp;
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <p>Product: Air Cooler</p>
+                <p>The store gives me additional options by carrying a wide variety of things from popular brands.</p>
+            </div>
+            <div class="reviewborder">
+                <div>
+                    <img src="icon/review/p1.jpg" alt="p1">
+                </div>
+                <span class="reviewname">Lina</span>&nbsp;
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <p>Product: Stick Vacuum</p>
+                <p>The multifunctional stick vacuum saves me a lot of time. The family also loves it. Thanks seller!</p>
+            </div>
+            <div class="reviewborder">
+                <div>
+                    <img src="icon/review/p9.jpg" alt="p9">
+                </div>
+                <span class="reviewname">Najwa</span>&nbsp;
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: #a6c8de;">&starf;</span>
+                <span style="font-size: 150%; color: #a6c8de;">&starf;</span>
+                <p>Product: Fan</p>
+                <p>The cable is quite short. The performance is good, but the plastic smell is quite strong after heating.</p>
+            </div>
+            <div class="reviewborder">
+                <div>
+                    <img src="icon/review/p10.jpeg" alt="p10">
+                </div>
+                <span class="reviewname">Aireen</span>&nbsp;
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: #a6c8de;">&starf;</span>
+                <span style="font-size: 150%; color: #a6c8de;">&starf;</span>
+                <span style="font-size: 150%; color: #a6c8de;">&starf;</span>
+                <p>Product: Refrigerator</p>
+                <p>I order 550L refrigerator but received 500L refrigerator. Please check the order before shipping.</p>
+            </div>
+            <div class="reviewborder">
+                <div>
+                    <img src="icon/review/p14.jpg" alt="p14">
+                </div>
+                <span class="reviewname">Lovene</span>&nbsp;
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <p>Product: Refrigerator</p>
+                <p>The customer service was friendly and helpful!</p>
+            </div>
+            <div class="reviewborder">
+                <div>
+                    <img src="icon/review/p16.jpg" alt="p16">
+                </div>
+                <span class="reviewname">Jess</span>&nbsp;
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <p>Product: Fan</p>
+                <p>The store did an excellent job of having a physical location, which helps me because I can physically see the product after completing an online survey.</p>
+            </div>
+            <div class="reviewborder">
+                <div>
+                    <img src="icon/review/p11.jpeg" alt="p11">
+                </div>
+                <span class="reviewname">Charis</span>&nbsp;
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: #a6c8de;">&starf;</span>
+                <span style="font-size: 150%; color: #a6c8de;">&starf;</span>
+                <span style="font-size: 150%; color: #a6c8de;">&starf;</span>
+                <p>Product: Washing Machine</p>
+                <p>There is no sound when the washing machine is finished operating.</p>
+            </div>
+            <div class="reviewborder">
+                <div>
+                    <img src="icon/review/p7.jpg" alt="p7">
+                </div>
+                <span class="reviewname">Jordan</span>&nbsp;
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: #a6c8de;">&starf;</span>
+                <span style="font-size: 150%; color: #a6c8de;">&starf;</span>
+                <p>Product: Air Conditioner</p>
+                <p>The delivery person said it was just the wrong box, but in fact the product was also wrong.</p>
+            </div>
+            <div class="reviewborder">
+                <div>
+                    <img src="icon/review/p8.jpeg" alt="p8">
+                </div>
+                <span class="reviewname">Bryan</span>&nbsp;
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: #a6c8de;">&starf;</span>
+                <span style="font-size: 150%; color: #a6c8de;">&starf;</span>
+                <p>Product: Dryer</p>
+            </div>
+            <div class="reviewborder">
+                <div>
+                    <img src="icon/review/p12.jpeg" alt="p12">
+                </div>
+                <span class="reviewname">Emma</span>&nbsp;
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: hsl(225, 79%, 35%);">&starf;</span>
+                <span style="font-size: 150%; color: #a6c8de;">&starf;</span>
+                <span style="font-size: 150%; color: #a6c8de;">&starf;</span>
+                <p>Product: Robot Vacuum</p>
+            </div>
+        </div>
+        <br/>
+        <footer>
+            <div class="container">
+              <div class="box">
+                <a href="index.html"><img src="Icon/Nav_Icon/logo1.png" style="height: 100px; width:170px;"/></a>
+                <p>If you have any enquire, feel free to email us or whataspp us</p>
+                <p>Email Us: <a href="mailto:Qyhome@gamil.com">Qyhome@gmail.com</a></p>
+                <p>Whataspp Us: <a href="https://wa.me/601124553456" target="_blank">011-24553456</a> </p>
+                <p>Operation day: Monday to Sunday</p>
+                <p>Operation time: 8:00AM to 9:00PM</p>
+              </div>
+              <div class="box">
+                <h3>General Info</h3>
+                <ul>
+                  <li><a href="FAQ.html">FAQs</a></li>
+                  <li><a href="#">Register</a></li>
+                  <li><a href="#">Sign In</a></li>
+                  <li><a href="Outlet.html">Store Location</a></li>
+                  <li><a href="about_us.html">About Us</a></li>
+                  <li><a href="feedback.html">Feedback</a></li>
+                  <li><a href="terms.html">Terms & Conditions</a></li>
+                </ul>
+              </div>
+              <div class="box">
+                <h3>Follow Us</h3>
+                <ul>
+                  <li id="image"><a href="https://www.facebook.com/SenhengMY/" target="_blank"><img src="icon/Social/facebook.jpg"/></a></li>
+                  <li id="image"><a href="https://www.instagram.com/SenhengMY" target="_blank"><img src="icon/Social/insta.jpeg"/></a></li>
+                  <li id="image"><a href="https://wa.me/601124553456" target="_blank"><img src="Icon/Social/whataspp.jpeg"/></a></li>
+                </ul>
+              </div>
+              <div class="box">
+                <h3>We Accept</h3>
+                <ul>
+                  <li id="image"><img src="icon/Payment_Method/apple_pay.jpg"/></li>
+                  <li id="image"><img src="icon/Payment_Method/Boost.png"/></li>
+                  <li id="image"><img src="icon/Payment_Method/FPX.jpg"/></li>
+                  <li id="image"><img src="icon/Payment_Method/Grabpay.jpeg"/></li>
+                  <li id="image"><img src="icon/Payment_Method/Mastercard.jpeg"/></li>
+                  <li id="image"><img src="icon/Payment_Method/paypal.png"/></li>
+                  <li id="image"><img src="icon/Payment_Method/Shoppepay.png"/></li>
+                  <li id="image"><img src="icon/Payment_Method/TNG.png"/></li>
+                  <li id="image"><img src="icon/Payment_Method/visa.jpg"/></li>
+                </ul>
+              </div>
+              <p>Copyright &#169; 2024 QY Home SDN BHD &#x0028;75321-W&#x0029;, All Right Reserved.</p>
+            </div>
+        </footer>
+        <div class = "click" style="margin-right: 31%">
+            <div class="form-popup" id="commentForm">
+                <form class="form-container">
+                    <h1 style="margin-bottom: -2px;">Feedback Form</h1>
+                    <div id = "box">
+                        <span onclick = "star(1)" class = "str">
+                            ★
+                        </span>
+                        <span onclick = "star(2)" class = "str">
+                            ★
+                        </span>
+                        <span onclick = "star(3)" class = "str">
+                            ★
+                        </span>
+                        <span onclick = "star(4)" class = "str">
+                            ★
+                        </span>
+                        <span onclick = "star(5)" class = "str">
+                            ★
+                        </span>
+                        <h3 id="output">Rating is : 0/5</h3>
+                    </div>
+                    <p>Select your product:</p>
+                    <select name="product" id="product">
+                        <option value="airconditioner">Air Conditioner</option>
+                        <option value="aircooler">Air Cooler</option>
+                        <option value="airpurifier">Air Purifier</option>
+                        <option value="washingmachine">Washing Machine</option>
+                        <option value="dryer">Dryer</option>
+                        <option value="robotvacuum">Robot Vacuum</option>
+                        <option value="stickvacuum">Stick Vacuum </option>
+                        <option value="refrigerator">Refrigerator</option>
+                        <option value="fan">Fan</option>
+                        <option value="waterheater">Water Heater</option>
+                    </select>
+                    <br/><br/>
+                    <label for="usrname">Username</label>
+                    <input type="text" class="width" name="usrname" placeholder="Your username"><br/>
+                    <label for="customerfeedback">Feedback</label>
+                    <textarea class="width" rows="7" cols="50" placeholder="Your feedback" name="yourfeedback" form="userform"></textarea></br>
+                    <button type="submit" class="btn" onclick="closeForm1(), alert('Submitted Successfully!')">Submit Feedback</button>
+                    <button type="button" class="btn cancel" onclick="closeForm1()">Close</button> 
+                </form>
+            </div>
+        </div>
+        <div class="popupForm" id="accountform">
+            <form>
+                <h1 id="accounttitle">Welcome to QYHome</h1>
+                <div class="container">
+                    <div class="option">
+                        <a href="eregister.html"><img class="accountoption" src="Icon/Account/registeroption.jpg" alt="sign up option" width="180px" height="180px"></a><br/>
+                        SIGN UP
+                    </div>
+                    <div class="option">
+                        <a href="elogin.html"><img class="accountoption" src="Icon/Account/loginoption.jpg" alt="login option" width="180px" height="180px"></a><br/>
+                        LOGIN
+                    </div>
+                </div> 
+                <br/>
+                <button type="button" class="btncancel" onclick="closeForm()"><b>Close</b></button> 
+            </form>
+        </div>
+        <script src="feedback.js"></script>
+        <script src="logout.js"></script>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="checkout.css">
+        <title>Checkout</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Check Out</h1>
+            </header>
+            <main>
+                <div class="cartTab">
+                    <h1>Shopping Cart</h1>
+                    <div class="listCart">
+                        <!-- Shopping cart items will be displayed here -->
+                    </div>
+                    <div class="totalPriceRow">
+                        <!-- Total price will be displayed here -->
+                    </div>
+                </div>
+        
+                <div class="paymentMethod">
+                    <h1>Payment Method</h1>
+                    <form name="paymentMethod" id="paymentMethod">
+                        <div class="selectMethod">
+                            <label for="selectMethod">Payment Method: </label>
+                            <select name="selectMethod" id="selectMethod">
+                                <option value="Credit/Debit Card">Credit/Debit Card</option>
+                                <option value="Public Bank Online Banking">Public Bank Online Banking</option>
+                                <option value="Maybank Online Banking">Maybank Online Banking</option>
+                                <option value="Hong Leong Bank Online Banking">Hong Leong Bank Banking</option>
+                            </select>
+                        </div>
+                        <div class="formButton">
+                            <input type="submit" value="Continue To Payment">
+                            <input type="submit" value="Cancel">
+                        </div>
+                    </form>
+                </div>
+            </main>
+        </div>
+        <script src="checkout.js"></script>
+    
+        <script>
+            // Retrieve shopping cart information from localStorage
+            let listCartHTML = localStorage.getItem('listCart');
+            let totalPriceHTML = localStorage.getItem('totalPrice');
+
+            // Display shopping cart information on the checkout page
+            document.querySelector('.listCart').innerHTML = listCartHTML;
+            document.querySelector('.totalPriceRow').innerHTML = totalPriceHTML;
+        </script>
+    </body>
+</html>
